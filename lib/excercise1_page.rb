@@ -1,6 +1,6 @@
 require_relative 'base_page'
 
-class Excercise1 < BasePage
+class Excercise1Page < BasePage
 
     # PROBLEM1 PAGE CONTROLS
 
