@@ -1,7 +1,7 @@
 class Browser
     
     attr_reader :driver
-
+    
     def initialize(browser_name)
         @driver = Selenium::WebDriver.for :chrome
         delete_cookies
@@ -36,3 +36,4 @@ class Browser
         @driver.manage.window.resize_to(screen_width, screen_height)
     end
 
+end

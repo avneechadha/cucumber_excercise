@@ -4,14 +4,11 @@ require 'require_all'
 require 'test/unit/assertions'
 require  'logger'
 
+World Test::Unit::Assertions
+
 require_all 'lib'
-
-Before do |scenario|
-    @browser = Browser.new(ENV['DRIVER'])
-end
-
 
 After do |scenario|
     sleep 5
-    @browser.driver.quit;
+    @browser.driver.quit; 
 end
