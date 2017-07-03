@@ -11,33 +11,32 @@ Feature: Web page verification
     Scenario: Testing the expected values are present in the page 
     Given I am on excercise1 page 
     
-    And I expect the value of "value 1" field is non empty in excercise page
-    And I expect the value of "value 2" field is non empty in excercise page
-    And I expect the value of "value 3" field is non empty in excercise page
-    And I expect the value of "value 4" field is non empty in excercise page
-    And I expect the value of "value 5" field is non empty in excercise page
-    And I expect the value of "total balance" field is non empty in excercise page
+    And I expect the value of "value 1" field is non empty in excercise1 page
+    And I expect the value of "value 2" field is non empty in excercise1 page
+    And I expect the value of "value 3" field is non empty in excercise1 page
+    And I expect the value of "value 4" field is non empty in excercise1 page
+    And I expect the value of "value 5" field is non empty in excercise1 page
+    And I expect the value of "total balance" field is non empty in excercise1 page
 
-    And I expect the value of "value 1" field is "$122,365.24" in excercise page
-    And I expect the value of "value 2" field is "$599.00" in excercise page
-    And I expect the value of "value 3" field is "$850,139.99" in excercise page
-    And I expect the value of "value 4" field is "$23,329.50" in excercise page
-    And I expect the value of "value 5" field is "$566.27" in excercise page
+    And I expect the value of "value 1" field is "$122,365.24" in excercise1 page
+    And I expect the value of "value 2" field is "$599.00" in excercise1 page
+    And I expect the value of "value 3" field is "$850,139.99" in excercise1 page
+    And I expect the value of "value 4" field is "$23,329.50" in excercise1 page
+    And I expect the value of "value 5" field is "$566.27" in excercise1 page
 
-    And I expect the value of "value 1" field is greater than "0" in excercise page
-    And I expect the value of "value 2" field is greater than "0" in excercise page
-    And I expect the value of "value 3" field is greater than "0" in excercise page
-    And I expect the value of "value 4" field is greater than "0" in excercise page
-    And I expect the value of "value 5" field is greater than "0" in excercise page
+    And I expect the value of "value 1" field is greater than "0" in excercise1 page
+    And I expect the value of "value 2" field is greater than "0" in excercise1 page
+    And I expect the value of "value 3" field is greater than "0" in excercise1 page
+    And I expect the value of "value 4" field is greater than "0" in excercise1 page
+    And I expect the value of "value 5" field is greater than "0" in excercise1 page
     
-    And I expect the "value 1" field is formatted as currency in excercise page
-    And I expect the "value 2" field is formatted as currency in excercise page
-    And I expect the "value 3" field is formatted as currency in excercise page
-    And I expect the "value 4" field is formatted as currency in excercise page
-    And I expect the "value 5" field is formatted as currency in excercise page
+    And I expect the "value 1" field is formatted as currency in excercise1 page
+    And I expect the "value 2" field is formatted as currency in excercise1 page
+    And I expect the "value 3" field is formatted as currency in excercise1 page
+    And I expect the "value 4" field is formatted as currency in excercise1 page
+    And I expect the "value 5" field is formatted as currency in excercise1 page
     
-    And I expect the value of "total balance" field is "$1,000,000.00" in excercise page
+    And I expect the value of "total balance" field is "$1,000,000.00" in excercise1 page
     
-    And I expect the value of "total balance" field is equal to sum of values in excercise page
-
+    And I expect the sum of all value fields matches with "total balance" field in excercise1 page
 

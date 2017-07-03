@@ -1,5 +1,5 @@
 class BasePage
-
+    
     def initialize(driver)
         @driver =   driver
         @logger = Logger.new(STDOUT)
@@ -21,3 +21,13 @@ class BasePage
         find(locator, element_name).displayed?
     end    
 
+    def type_in_input_field(text, locator, element_name)
+        type(text, locator, element_name)
+    end
+
+    def get_from_input_field(locator, element_name)
+        sValue = get_text(locator, element_name)
+        return sValue
+    end        
+    
+    
